@@ -160,6 +160,7 @@ class BaseCollection:
 
     def has_uid(self, uid: str) -> bool:
         """Check if a UID exists in the collection."""
+        return False
         for item in self.get_all():
             if item.uid == uid:
                 return True
